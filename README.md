@@ -1,7 +1,7 @@
 # PCNE_paper_script
-Tutorial to reproduce data presented in paper "TBD". 
+Tutorial to reproduce data presented in the paper "TBD". 
 
-# Requirements
+## Requirements
 You will need the following files:
 * The chromosome file ([here](./data/chromosome/))
 * The plasmid file ([here](./data/plasmid/))
@@ -13,7 +13,7 @@ The following tools and relative dependencies are required:
 * [PCNE](https://github.com/riccabolla/PCNE)
 * [Art](https://www.niehs.nih.gov/research/resources/software/biostatistics/art)
 
-All the analyses have been performed in separate conda env
+All the analyses have been performed in a separate conda env
 ```
 conda create -n pcne -c bioconda pcne
 conda create -n mobsuite -c bioconda mobsuite
@@ -21,10 +21,16 @@ conda create -n platon -c bioconda platon
 conda create -n shovill -c bioconda shovill
 conda create -n art -c bioconda art
 ```
-# File prepartion
-1) Create a folder named "Data"
-2) Put the chromosome and plasmid file in Data
+For further details, look at the respective manual.
 
-# Generate reads
-In Data/ execute the script [art.sh](./Script/art.sh)
+## File preparation
+Go to the working directory and put the chromosome and plasmid files in it.
+
+## Generate reads
+In the working directory, execute the script [art.sh](./Script/art.sh)
+
+## Test PCNE
+In the working directory, execute the script [pcne_30x.sh](./Script/pcne_30x.sh) and [pcne_50x.sh](./Script/pcne_50x.sh). 
+
+
 
