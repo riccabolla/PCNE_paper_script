@@ -1,4 +1,4 @@
-# PCNE_paper_script
+# PCNE workflow
 Tutorial to reproduce data presented in the paper "TBD". 
 
 ## Requirements
