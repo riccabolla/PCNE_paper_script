@@ -26,5 +26,5 @@ conda create -n art -c bioconda art
 2) Put the chromosome and plasmid file in Data
 
 # Generate reads
-In Data/ execute the script [art.sh](./script/art.sh)
+In Data/ execute the script [art.sh](./Script/art.sh)
 
