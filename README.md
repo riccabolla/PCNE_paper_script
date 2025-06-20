@@ -32,5 +32,12 @@ In the working directory, execute the script [art.sh](./Script/art.sh)
 ## Test PCNE
 In the working directory, execute the script [pcne_30x.sh](./Script/pcne_30x.sh) and [pcne_50x.sh](./Script/pcne_50x.sh). 
 
+## Assembly simulated reads
+In the working directory, execute the script [shovill.sh](./Script/shovill.sh)
 
+## Test PCNE + Platon
+In the working directory, execute the script [pcne_platon.sh](./Script/pcne_platon.sh)
+
+## Test PCNE + MOBSuite
+In the working directory, execute the script [pcne_mobsuite.sh](./Script/pcne_mobsuite.sh)
 
