@@ -1,6 +1,7 @@
 #!/bin/bash
 
 conda activate pcne
+
 INPUT_30X="Sim_30x"
 OUTPUT_30X="pcne_30x"
 CHROMOSOME="CP003200.1_chrom.fasta"
