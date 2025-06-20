@@ -13,7 +13,7 @@ for file_R1 in $INPUT_30X/*_R1.fastq.gz; do
   sample_name=$(basename "$file_R1" _R1.fastq.gz)
   pcne -c $CHROMOSOME -p $PLASMID -r ${file_R1} -R ${file_R2} -t 4  --plot -o $OUTPUT_30X/${sample_name}_base 
   pcne -c $CHROMOSOME -p $PLASMID -r ${file_R1} -R ${file_R2} -t 4 --plot -b -o $OUTPUT_30X/${sample_name}_scg 
-  pcne -c $CHROMOSOME -p $PLASMID -r ${file_R1} -R ${file_R2} -t 4 -b --gc-correction --gc-plot ${sample_name}.png -Q 10 -F 2308 -o $OUTPUT_30X/${sample_name}_scg_filter_gc
+  pcne -c $CHROMOSOME -p $PLASMID -r ${file_R1} -R ${file_R2} -t 4  --plot -b --gc-correction --gc-plot ${sample_name}.png -Q 10 -F 2308 -o $OUTPUT_30X/${sample_name}_scg_filter_gc
 done  
   
   
