@@ -36,6 +36,7 @@ In the working directory, execute the script [pcne_30x.sh](./Script/pcne_30x.sh)
 In the working directory, execute the script [shovill.sh](./Script/shovill.sh)
 
 ## Test PCNE + Platon
+First, download the platon database following [instructions](https://github.com/oschwengers/platon).
 In the working directory, execute the script [pcne_platon.sh](./Script/pcne_platon.sh)
 
 ## Test PCNE + MOBSuite
