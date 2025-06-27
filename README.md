@@ -1,5 +1,5 @@
 # PCNE workflow
-Tutorial to reproduce data presented in the paper "TBD". 
+Tutorial to reproduce data presented in the paper "PCNE: a tool for plasmid copy number estimation". 
 
 ## Requirements
 You will need the following files:
