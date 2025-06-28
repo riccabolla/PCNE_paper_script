@@ -23,6 +23,9 @@ conda create -n art -c bioconda art
 ```
 For further details, look at the respective manual.
 
+## Hardware 
+All scripts require 5 CPUs and 16 GB of RAM maximum.
+
 ## File preparation
 Go to the working directory and put the chromosome and plasmid files in it.
 
