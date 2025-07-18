@@ -3,9 +3,9 @@ Tutorial to reproduce data presented in the paper "PCNE: a tool for plasmid copy
 
 ## Requirements
 You will need the following files:
-* The chromosome file ([here](./data/chromosome/))
-* The plasmid file ([here](./data/plasmid/))
-
+* The chromosome file
+* The plasmid file
+  
 The following tools and relative dependencies are required:
 * [Shovill](https://github.com/tseemann/shovill)
 * [Mob-SUITE](https://github.com/phac-nml/mob-suite)
