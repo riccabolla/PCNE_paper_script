@@ -3,8 +3,8 @@ Tutorial to reproduce data presented in the paper "PCNE: a tool for plasmid copy
 
 ## Requirements
 You will need the following files:
-* The chromosome file
-* The plasmid file
+* The [chromosome file](./CP003200.1_chrom.fasta)
+* The [plasmid file](./CP003223.1_plasmid.fasta)
   
 The following tools and relative dependencies are required:
 * [Shovill](https://github.com/tseemann/shovill)
