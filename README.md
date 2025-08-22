@@ -20,6 +20,7 @@ conda create -n mobsuite -c bioconda mobsuite
 conda create -n platon -c bioconda platon
 conda create -n shovill -c bioconda shovill
 conda create -n art -c bioconda art
+conda create -n iss -c bioconda insilicoseq
 ```
 For further details, look at the respective manual.
 
