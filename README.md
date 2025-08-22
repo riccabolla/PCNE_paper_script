@@ -1,5 +1,5 @@
 # PCNE workflow
-Tutorial to reproduce data provided at Bollini, R. (2025). PCNE v2.0.0 benchmark (Versione 1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.16928752.  
+Tutorial to reproduce data provided at https://doi.org/10.5281/zenodo.16928752.  
 
 ## Requirements
 You will need the following files:
