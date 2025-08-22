@@ -25,25 +25,34 @@ conda create -n iss -c bioconda insilicoseq
 ```
 For further details, look at the respective manual.
 
-## Hardware 
+## Simulated dataset
+### Hardware 
 All scripts require 5 CPUs and 16 GB of RAM maximum.
 
-## File preparation
-Go to the working directory and put the chromosome and plasmid files in it.
+### File preparation
+Go to the working directory and put the [chromosome](./CP003200.1_chrom.fasta) and [plasmid](./CP003223.1_plasmid.fasta) files in it.
 
-## Generate reads
-In the working directory, execute the script [art.sh](./Script/art.sh)
+### Generate reads
+In the working directory, execute the script [art.sh](./Script/art.sh) and [iss.sh](./Script/iss.sh)
 
-## Test PCNE
-In the working directory, execute the script [pcne_30x.sh](./Script/pcne_30x.sh) and [pcne_50x.sh](./Script/pcne_50x.sh). 
+### Test PCNE
+In the working directory, execute the script [pcne_50x.sh](./Script/pcne_50x.sh). 
 
-## Assembly simulated reads
+### Assembly simulated reads
 In the working directory, execute the script [shovill.sh](./Script/shovill.sh)
 
-## Test PCNE + Platon
+### Test PCNE + Platon
 First, download the platon database following [instructions](https://github.com/oschwengers/platon), and put it in the working directory. <br>
 In the working directory, execute the script [pcne_platon.sh](./Script/pcne_platon.sh)
 
-## Test PCNE + MOBSuite
+### Test PCNE + MOBSuite
 In the working directory, execute the script [pcne_mobsuite.sh](./Script/pcne_mobsuite.sh)
+
+## Real dataset
+
+### File preparation
+Download filtered reads directly from https://doi.org/10.5281/zenodo.16928752, or in alternative you can use prefetch following the [instructions](https://github.com/ncbi/sra-tools). <br>
+WGS reads are deposited at SRA archive under BioProject [PRJNA1044738](https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA1044738) <br>
+Once downloaded, rename the reads as their sample name (ex. EM4N2) 
+
 
