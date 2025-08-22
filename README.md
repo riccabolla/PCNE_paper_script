@@ -12,7 +12,7 @@ The following tools and relative dependencies are required:
 * [Platon](https://github.com/oschwengers/platon)
 * [PCNE](https://github.com/riccabolla/PCNE)
 * [Art](https://www.niehs.nih.gov/research/resources/software/biostatistics/art)
-* [InSilicoSeq] (https://github.com/HadrienG/InSilicoSeq)
+* [InSilicoSeq](https://github.com/HadrienG/InSilicoSeq)
 
 All the analyses have been performed in a separate conda env
 ```
