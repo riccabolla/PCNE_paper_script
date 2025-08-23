@@ -54,7 +54,7 @@ In the working directory, execute the script [pcne_mobsuite.sh](./Script/pcne_mo
 Download filtered reads directly from https://doi.org/10.5281/zenodo.16928752, or in alternative you can use prefetch following the [instructions](https://github.com/ncbi/sra-tools). <br>
 WGS reads are deposited at SRA archive under BioProject [PRJNA1044738](https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA1044738) <br>
 Once downloaded, rename the reads as their sample name (ex. EM4N2) <br>
-To filter reads use [FastP](https://github.com/OpenGene/fastp) 
+To filter reads use [FastP](https://github.com/OpenGene/fastp) setting quality filter `-q 30`
 
 ### Assembly
 Put the reads in a folder named "Real_data_reads", and from working directory launch [real_data_assembly.sh](./Script/real_data_assembly.sh)
