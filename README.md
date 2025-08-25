@@ -50,6 +50,10 @@ In the working directory, execute the script [pcne_mobsuite.sh](./Script/pcne_mo
 
 ## Real dataset
 
+### Hardware
+To reproduce real data, 5 cpus and 32 GB of memory are required
+
+
 ### File preparation
 Download filtered reads directly from https://doi.org/10.5281/zenodo.16928752, or in alternative you can use prefetch following the [instructions](https://github.com/ncbi/sra-tools). <br>
 WGS reads are deposited at SRA archive under BioProject [PRJNA1044738](https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA1044738) <br>
