@@ -17,7 +17,7 @@ The following tools and relative dependencies are required:
 All the analyses have been performed in a separate conda env
 ```
 conda create -n pcne -c bioconda pcne
-conda create -n mobsuite -c bioconda mobsuite
+conda create -n mobsuite -c bioconda mob_suite
 conda create -n platon -c bioconda platon
 conda create -n shovill -c bioconda shovill
 conda create -n art -c bioconda art
