@@ -11,6 +11,6 @@ for file_R1 in $INPUT/*_R1.fastq.gz; do
   sample_name=$(basename "$file_R1" _R1.fastq.gz)
   CHROMOSOME="$DIR"/"$sample_name"/"$sample_name".chromosome.fasta
   PLASMID="$DIR"/"$sample_name"/"$sample_name".plasmid.fasta
-  bash /home/cento/rbollini/PCNE/bin/tmp/pcne -c  $CHROMOSOME -p $PLASMID -r ${file_R1} -R ${file_R2} -t 5 --single-plasmid  --plot --gc-correction --gc-plot -o $OUTPUT/${sample_name}_gc
-  bash /home/cento/rbollini/PCNE/bin/tmp/pcne -c  $CHROMOSOME -p $PLASMID -r ${file_R1} -R ${file_R2} -t 5 --single-plasmid  --plot -o $OUTPUT/${sample_name}_nogc
+  pcne -c  $CHROMOSOME -p $PLASMID -r ${file_R1} -R ${file_R2} -t 5 --single-plasmid  --plot --gc-correction --gc-plot -o $OUTPUT/${sample_name}_gc
+  pcne -c  $CHROMOSOME -p $PLASMID -r ${file_R1} -R ${file_R2} -t 5 --single-plasmid  --plot -o $OUTPUT/${sample_name}_nogc
 done
