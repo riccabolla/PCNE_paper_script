@@ -1,11 +1,9 @@
 # PCNE workflow
-Tutorial to reproduce data provided at https://doi.org/10.5281/zenodo.16928752.  
+Tutorial to reproduce data presented in the paper: [PCNE: a tool to estimate plasmid copy number](). <br> 
 
-## Requirements
-You will need the following files:
-* The [chromosome file](./CP003200.1_chrom.fasta)
-* The [plasmid file](./CP003223.1_plasmid.fasta)
-  
+## Requirements  
+All the required files (reads, assemblies ...) are available here: 
+
 The following tools and relative dependencies are required:
 * [Shovill](https://github.com/tseemann/shovill)
 * [Mob-SUITE](https://github.com/phac-nml/mob-suite)
@@ -13,6 +11,7 @@ The following tools and relative dependencies are required:
 * [PCNE](https://github.com/riccabolla/PCNE)
 * [Art](https://www.niehs.nih.gov/research/resources/software/biostatistics/art)
 * [InSilicoSeq](https://github.com/HadrienG/InSilicoSeq)
+* [Abricate](https://github.com/tseemann/abricate)
 
 All the analyses have been performed in a separate conda env
 ```
@@ -22,8 +21,9 @@ conda create -n platon -c bioconda platon
 conda create -n shovill -c bioconda shovill
 conda create -n art -c bioconda art
 conda create -n iss -c bioconda insilicoseq
+conda create -n abricate -c bioconda abricate
 ```
-For further details, look at the respective manual.
+For further details, look at the respective documentation pages.
 
 ## Simulated dataset
 ### Hardware 
@@ -53,7 +53,6 @@ In the working directory, execute the script [pcne_mobsuite.sh](./Script/pcne_mo
 ### Hardware
 To reproduce real data, 5 cpus and 32 GB of memory are required
 
-
 ### File preparation
 Download filtered reads directly from https://doi.org/10.5281/zenodo.16928752, or in alternative you can use prefetch following the [instructions](https://github.com/ncbi/sra-tools). <br>
 WGS reads are deposited at SRA archive under BioProject [PRJNA1044738](https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA1044738) <br>
@@ -69,6 +68,25 @@ From working directory run [platon_real_data.sh](./Script/platon_real_data.sh)
 ### PCNE
 From working directory run [pcne_real_data.sh](./Script/pcne_real_data.sh)
 
+## Case study
 
+### Hardware
+To reproduce real data, 5 cpus and 32 GB of memory are required
 
+### File preparation
+Download filtered reads directly from , or in alternative raw reads from [SRA](https://www.ncbi.nlm.nih.gov/sra/?term=SRP473988). <br>
+Once downloaded, rename the reads as their sample name (KP_01, ...) <br>
+To filter reads use [FastP](https://github.com/OpenGene/fastp) setting quality filter `-q 30` 
+
+### Assembly
+Put reads in a folder named "Case_study_reads", and from working directory launch [case_study_shovill.sh](./Script/case_study_shovill.sh).
+
+### Plasmid identification
+From working directory run [case_study_mobsuite.sh](./Script/case_study_mobsuite.sh)
+
+### Abricate
+From working directory run [case_study_abricate.sh](./Script/case_study_abricate.sh)
+
+### Abricate
+From working directory run [case_study_pcne.sh](./Script/case_study_pcne.sh)
 
