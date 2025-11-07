@@ -87,6 +87,6 @@ From working directory run [case_study_mobsuite.sh](./Script/case_study_mobsuite
 ### Abricate
 From working directory run [case_study_abricate.sh](./Script/case_study_abricate.sh)
 
-### Abricate
+### PCNE
 From working directory run [case_study_pcne.sh](./Script/case_study_pcne.sh)
 
