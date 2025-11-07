@@ -2,7 +2,7 @@
 Tutorial to reproduce data presented in the paper: [PCNE: a tool to estimate plasmid copy number](). <br> 
 
 ## Requirements  
-All the required files (reads, assemblies ...) are available here: 
+All the required files (reads, assemblies ...) are available here: https://doi.org/10.5281/zenodo.17550873
 
 The following tools and relative dependencies are required:
 * [Shovill](https://github.com/tseemann/shovill)
