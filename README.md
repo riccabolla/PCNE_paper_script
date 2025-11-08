@@ -74,7 +74,7 @@ From working directory run [pcne_real_data.sh](./Script/pcne_real_data.sh)
 To reproduce real data, 5 cpus and 32 GB of memory are required
 
 ### File preparation
-Download filtered reads directly from , or in alternative raw reads from [SRA](https://www.ncbi.nlm.nih.gov/sra/?term=SRP473988). <br>
+Download filtered reads directly from https://doi.org/10.5281/zenodo.17550873, or in alternative raw reads from [SRA](https://www.ncbi.nlm.nih.gov/sra/?term=SRP473988). <br>
 Once downloaded, rename the reads as their sample name (KP_01, ...) <br>
 To filter reads use [FastP](https://github.com/OpenGene/fastp) setting quality filter `-q 30` 
 
